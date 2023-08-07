@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Clik's Script", HidePremium = false, SaveConfig = true, ConfigFolder = "ClikScript"})
+local Window = OrionLib:MakeWindow({Name = "Clik's Script", HidePremium = false, SaveConfig = true, ConfigFolder = "ClikScript", IntroText = "Clik's Script"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -181,5 +181,12 @@ ScriptsTab:AddButton({
    Name = "Infinite Yield",
    Callback = function() 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+
+ScriptsTab:AddButton({
+   Name = "Audio Logger",
+   Callback = function() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/X1x2256/scripts/main/Audio%20Logger.lua"))()
    end,
 })
